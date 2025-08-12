@@ -15,6 +15,7 @@
 
 typedef enum { DOMESTICO, INTERNACIONAL } TipoVoo;
 typedef enum { AGENDADO, POUSANDO, DESEMBARCANDO, AGUARDANDO_DECOLAGEM, DECOLANDO, CONCLUIDO, ACIDENTE, DEADLOCK } StatusVoo;
+typedef enum { RECURSO_ADQUIRIDO = 1, SEM_RECURSO = 0, RESOURCE_TIMED_OUT = 2 } SolicitarStatus;
 
 typedef struct {
     int id;
